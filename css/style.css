@@ -12,7 +12,8 @@ h1,h2,h3,h4,h5,h6{
 }
 ul,label{
 	margin:0;
-	padding:0;f
+	padding:0;
+f
 }
 body a:hover{
 	text-decoration:none;
@@ -492,6 +493,16 @@ p.wt {
     -o-background-size: cover;
     -ms-background-size: cover;
     min-height: 370px;
+}
+.banner-2 {
+    background: url(../images/logo2.png) no-repeat 20px 0px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    min-height: 1100px;
+    background-position: 0px -100px;
 }
 /*-- gallery --*/
 .gallery-grids{
