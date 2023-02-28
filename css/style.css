@@ -1665,6 +1665,9 @@ h3.tittle {
 .banner-1 {
     min-height: 275px;
 }
+.banner-2 {
+    min-height: 775px;
+}
 }
  /*-- responsive-design --*/
 @media (max-width: 767px){
