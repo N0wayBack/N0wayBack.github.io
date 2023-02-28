@@ -502,7 +502,7 @@ p.wt {
     -o-background-size: cover;
     -ms-background-size: cover;
     min-height: 1100px;
-    background-position: 0px -100px;
+    background-position: center;
 }
 /*-- gallery --*/
 .gallery-grids{
@@ -1804,6 +1804,9 @@ h3.tittle {
 }
  /*-- responsive-design --*/
 @media (max-width: 600px){
+.banner-2 {
+    min-height: 450px;
+}
 .banner h2 {
     font-size: 1.6em;
 }
