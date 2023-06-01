@@ -495,13 +495,13 @@ p.wt {
     min-height: 370px;
 }
 .banner-2 {
-    background: url(../images/logo2.png) no-repeat 20px 0px;
+    background: url(../images/logo2.png) no-repeat 0px 0px;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     -ms-background-size: cover;
-    min-height: 1100px;
+    min-height: 1000px;
     background-position: center;
 }
 /*-- gallery --*/
