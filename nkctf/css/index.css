@@ -1,0 +1,351 @@
+* {
+  padding: 0;
+  margin:0;
+}
+body {
+  position: relative;
+  left: 0rem;
+  width: 100%;
+  z-index: -1;
+  background: url(../images/整图背景.png) no-repeat center;
+  /* height: 200rem; */
+}
+.main {
+  position: absolute;
+  top:0;
+  left: 0rem;
+  z-index: 1;
+  width: 100%;
+  height: 10rem;
+}
+.main img {
+  width: 100%;
+  height: 13.5rem;
+}
+.parti{
+  width: 22rem;
+  top: .6rem;
+  left: 50%;
+  transform: translateX(-55%);
+}
+.parti .logo .l {
+  width: 1.7rem;
+  height: 1.6rem;
+}
+.parti .logo .w {
+  width: 5rem;
+  height: 1.4rem;
+}
+.parti .parti3 {
+  left: 0rem;
+}
+.parti1 {
+  left: 3.7rem;
+}
+.parti3 .b{
+  width: 9.6rem;
+  height: 2rem;
+  z-index: 1;
+  left: -2rem;
+}
+.parti3 .l {
+  top: .2rem;
+  left: -1.7rem;
+  z-index: 2;
+}
+
+.parti3 .logo .w {
+  top: .2rem;
+  width: 12.5rem;
+  z-index: 2;
+}
+.parti1 .b {
+  width: 8rem;
+  height: 2rem;
+  z-index: 1;
+  left: 4.8rem;
+}
+.parti1 .logo .l {
+  top: .2rem;
+  left: 5.7rem;
+  z-index: 2;
+  width: 1.3rem;
+}
+.parti1 .logo .w {
+  top: .2rem;
+  left:7.4rem;
+  width: 15rem;
+  z-index: 2;
+}
+.parti1 .parti2 {
+  float: left;
+}
+.parti2 .logo .w{
+  top: .3rem;
+  width: 15rem;
+  height: 1.2rem;
+}
+.parti2 {
+  top: 0rem;
+  left: 13rem;
+}
+.parti2 .b{
+  width: 9rem;
+  left: 4.5rem;
+  height: 2rem;
+}
+.parti2 .l{
+  top: .2rem;
+  left: 5.1rem;
+}
+.parti2 .w{
+  top: .3rem;
+  width: 22rem;
+  top: .2rem;
+  left: 7rem;
+  z-index: 2;
+}
+.main .nkctf {
+ top: 3.1rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.main .nkctf img{
+  
+  width:22rem ;
+  height: 4.1rem;
+}
+.main .word{
+  top: 4.3rem;
+  left: -1rem;
+  right: 0;
+  margin: 0 auto;
+}
+.main .word img {
+  top: 2.9rem;
+  width: 24.54rem;
+  height: 4.7rem;
+  left: 0.8rem;
+}
+.main button {
+  width: 100%;
+  top: 11.4rem;
+  left: 0rem;
+}
+.main button img{
+  width: 12rem;
+height: 1.9rem;
+}
+.main::after{
+  display: block;
+  height: 1px;
+}
+button .bac {
+  position: relative;
+  width: 8.9rem;
+  height: 1.7rem;
+  background-color: #cb3332;
+  border-radius: .8rem;
+  margin: 0 auto;
+}
+button .bac .pa {
+top: 0;
+bottom: 0;
+left: -1.692rem;
+right: 0;
+margin: auto;
+}
+.frame {
+  top: 10rem;
+  /* left:.8rem; */
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+} 
+.frame .frames {
+  left: -1.9rem;
+
+}
+.frame .frames img{
+  top: -4.8rem;
+  width: 29.1rem;
+  height: 30.4rem;
+  left: 0.6rem;
+}
+.frame .words img{
+  top: 6.5rem;
+  left: 0.9rem;
+  width: 18.3rem;
+  height: 7.6rem;
+}
+.contestknow {
+  top: 16rem;
+  /* left: -1.6rem; */
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.contestknow .frame{
+  width: 29rem;  
+  height: 22rem;
+  left:0.7rem;
+  top: 9.6rem;
+}
+.contestknow .bac {
+width: 100%;
+height: 15rem;
+}
+.contestknow .head img{
+  width:10.7rem;  
+  height: 2rem;
+  top: 15rem;
+  left: -rem;
+}
+.contestknow .content {
+  left: 0rem;
+  right: 0;
+  top: 1.7rem;
+  margin: 0 auto;
+}
+.contestknow .content .dot {
+  /* width: 1rem; */
+  top: 14.5rem;
+  /* left: 3.2rem; */
+  left: 50%;
+  transform: translateX(-450%);}
+.contestknow .content .dot img{
+  margin: .5rem;
+  display: block;
+  width: 1rem;
+  height:1rem;
+}
+.contestknow .content .words {
+  left: 4.8rem;
+  top:4.6rem ;
+}
+.contestknow .content .words img {
+  top: 15rem;
+  width: 17.4rem;
+  height: 8.4rem;
+  left: 3.9rem;
+}
+.conawa {
+  width: 11rem;
+  top: 33rem;
+  left: 50%;
+  margin: 0 auto;
+  transform:translateX(-50%);
+}
+.conawa header{
+  left: -5rem;
+}
+.conawa header img {
+  width: 5.5rem;
+  height: 5.6rem;
+  top:11.3rem;
+  left: 3rem;
+}
+.conawa header .awa {
+  width: 10.7rem;
+  height: 2rem;
+  left: 5rem;
+  top: 13.5rem;
+}
+.conawa .group .dot img{
+width: 1.5rem;
+height: 1.5rem;
+margin-bottom: 5.9rem;
+}
+.conawa .group .dot .one{
+  margin-bottom: 5.8rem;
+}
+.conawa .group .dot .three {
+  margin-bottom: 7rem;
+}
+.conawa .group .dot .four {
+  margin-bottom: 5.5rem;
+}
+.conawa .group {
+  top: 19rem;
+  left: -0.8rem;
+}
+.conawa .head1 img{
+  width: 8.5rem;
+  margin-bottom: 6.5rem;
+}
+.conawa .head1{
+  left: 2rem;
+  top: -.1rem;
+}
+.conawa .content img {
+    width: 5.6rem;
+}
+.conawa .head1 .good {
+  position: absolute;
+  left: 0rem;
+  top: 24rem;
+}
+.conawa .head1 .blood {
+  position: absolute;
+  top: 31rem;
+  left: 0rem;
+
+}
+.conawa .content {
+  left: 3rem;
+  top:2rem;
+  /* left: 0;
+  right: 0;
+  margin: 0 auto; */
+}
+footer {
+  top: 89.6rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+footer .head {
+  width: 15rem;
+
+}
+footer .head img{
+  display: block;
+  width: 16.9rem;
+  margin: 0 auto;
+  margin-bottom: 3.8rem;
+}
+footer .head {
+  width: 100%;
+}
+footer .name{
+  top: 2rem;
+  width: 100%;
+}
+footer .name img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 23.2rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+footer .name .one {
+  top: .9rem;
+}
+footer .name .two{
+top: 8rem;
+width: 23.2rem;
+}
+footer .name .three {
+top: 15rem;
+width:18.2rem;
+margin-bottom: 5rem;
+}
+footer .name .four {
+  top: 21rem;
+  width: 100%;
+  height: 5rem;
+  margin-bottom: 5rem;
+}
