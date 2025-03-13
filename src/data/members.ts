@@ -13,7 +13,7 @@ export const members: Member[] = [
   {
     id: "Cain",
     name: "Cain",
-    avatar: "/assets/members/Cain.jpeg",
+    avatar: "/assets/members/Cain.webp",
     category: "admin",
     link: "https://www.cnblogs.com/cainyzb",
     skills: ["Full-stack","AI"],
@@ -21,7 +21,7 @@ export const members: Member[] = [
   {
     id: "rec",
     name: "rec",
-    avatar: "/assets/members/rec.jpg",
+    avatar: "/assets/members/rec.webp",
     category: "admin",
     bio: ":o",
     github: "Rechn0",
@@ -30,7 +30,7 @@ export const members: Member[] = [
   {
     id: "shenghuo2",
     name: "shenghuo2",
-    avatar: "/assets/members/shenghuo2.png",
+    avatar: "/assets/members/shenghuo2.webp",
     category: "admin",
     bio: "endless learning...",
     link: "https://blog.shenghuo2.top/",
@@ -40,7 +40,7 @@ export const members: Member[] = [
   {
     id: "duck0123",
     name: "duck0123",
-    avatar: "/assets/members/duck0123.jpg",
+    avatar: "/assets/members/duck0123.webp",
     category: "admin",
     bio: "什么都会一点，简单就给你AK，难就爆0给你看……",
     skills: ["Full-stack"],
@@ -48,7 +48,7 @@ export const members: Member[] = [
   {
     id: "糖醋小鸡块",
     name: "糖醋小鸡块",
-    avatar: "/assets/members/糖醋小鸡块.jpeg",
+    avatar: "/assets/members/糖醋小鸡块.webp",
     category: "admin",
     bio: "Running down to the riptide",
     link: "https://tangcuxiaojikuai.xyz",
@@ -58,7 +58,7 @@ export const members: Member[] = [
   {
     id: "Lazzaro",
     name: "Lazzaro",
-    avatar: "/assets/members/Lazzaro.jpg",
+    avatar: "/assets/members/Lazzaro.webp",
     category: "active",
     bio: "朝花夕拾杯中酒",
     link: "https://lazzzaro.github.io/",
@@ -68,7 +68,7 @@ export const members: Member[] = [
   {
     id: "晨曦",
     name: "晨曦",
-    avatar: "/assets/members/晨曦.jpg",
+    avatar: "/assets/members/晨曦.webp",
     category: "active",
     bio: "我是Cain的🐕",
     link: "https://chenxi9981.github.io/",
@@ -78,7 +78,7 @@ export const members: Member[] = [
   {
     id: "Chu0",
     name: "Chu0",
-    avatar: "/assets/members/Chu0.jpg",
+    avatar: "/assets/members/Chu0.webp",
     category: "active",
     bio: "渗透测试结束，系统非常安全......",
     link: "https://bowuchuling.github.io",
@@ -87,7 +87,7 @@ export const members: Member[] = [
   {
     id: "探姬",
     name: "探姬",
-    avatar: "/assets/members/探姬.jpg",
+    avatar: "/assets/members/探姬.webp",
     category: "active",
     bio: "关注探姬关注NK喵 谢谢喵",
     link: "https://hello-ctf.com/",
@@ -96,7 +96,7 @@ export const members: Member[] = [
   {
     id: "Kengwang",
     name: "Kengwang",
-    avatar: "/assets/members/Kengwang.png",
+    avatar: "/assets/members/Kengwang.webp",
     category: "active",
     bio: "Stay Cool~",
     link: "https://blog.kengwang.com.cn",
@@ -106,7 +106,7 @@ export const members: Member[] = [
   {
     id: "3tefanie",
     name: "3tefanie",
-    avatar: "/assets/members/3tefanie.jpg",
+    avatar: "/assets/members/3tefanie.webp",
     category: "active",
     bio: "天上皎皎明月光，人间匆匆少年郎，脚步最匆匆",
     link: "https://blog.csdn.net/luochen2436?type=blog",
@@ -115,7 +115,7 @@ export const members: Member[] = [
   {
     id: "BediveRe",
     name: "BediveRe",
-    avatar: "/assets/members/BediveRe.jpg",
+    avatar: "/assets/members/BediveRe.webp",
     category: "active",
     bio: "花无尽,月无穷",
     link: "https://www.cnblogs.com/BediveRe",
@@ -124,14 +124,14 @@ export const members: Member[] = [
   {
     id: "k1sme4",
     name: "k1sme4",
-    avatar: "/assets/members/k1sme4.jpg",
+    avatar: "/assets/members/k1sme4.webp",
     category: "active",
     skills: ["misc", "Forensics", "IR"],
   },
   {
     id: "chleynx",
     name: "chleynx",
-    avatar: "/assets/members/chleynx.jpg",
+    avatar: "/assets/members/chleynx.webp",
     category: "active",
     bio: "su",
     link: "http://www.chleynx.cn",
@@ -141,7 +141,7 @@ export const members: Member[] = [
   {
     id: "heshi",
     name: "heshi",
-    avatar: "/assets/members/heshi.jpg",
+    avatar: "/assets/members/heshi.webp",
     category: "active",
     bio: "高级寄师，全国可飞",
     link: "https://www.heshi906.xyz/",
@@ -150,7 +150,7 @@ export const members: Member[] = [
   {
     id: "G3rling",
     name: "G3rling",
-    avatar: "/assets/members/G3rling.jpg",
+    avatar: "/assets/members/G3rling.webp",
     category: "active",
     bio: "『愿君多采撷，此物最相思』",
     link: "https://g3rling.top/",
@@ -160,7 +160,7 @@ export const members: Member[] = [
   {
     id: "Qba9e",
     name: "Qba9e",
-    avatar: "/assets/members/Qba9e.jpg",
+    avatar: "/assets/members/Qba9e.webp",
     category: "active",
     bio: "Pwn2Ciallo～(∠・ω＜)⌒☆",
     github: "CookedMelon",
@@ -169,7 +169,7 @@ export const members: Member[] = [
   {
     id: "f1ag",
     name: "f1ag",
-    avatar: "/assets/members/f1ag.jpeg",
+    avatar: "/assets/members/f1ag.webp",
     category: "active",
     skills: ["Dev"],
   },
@@ -184,7 +184,7 @@ export const members: Member[] = [
   {
     id: "ve1kcon",
     name: "ve1kcon",
-    avatar: "/assets/members/ve1kcon.jpg",
+    avatar: "/assets/members/ve1kcon.webp",
     category: "active",
     link: "https://www.cnblogs.com/ve1kcon",
     skills: ["ICS", "pwn"],
@@ -192,7 +192,7 @@ export const members: Member[] = [
   {
     id: "Chsvk",
     name: "Chsvk",
-    avatar: "/assets/members/Chsvk.png",
+    avatar: "/assets/members/Chsvk.webp",
     category: "active",
     bio: "这个人很懒，什么也没留下~",
     link: "http://www.chsvk.fun",
@@ -201,14 +201,14 @@ export const members: Member[] = [
   {
     id: "koyun88",
     name: "koyun88",
-    avatar: "/assets/members/koyun88.jpeg",
+    avatar: "/assets/members/koyun88.webp",
     category: "active",
     skills: ["reverse"],
   },
   {
     id: "Aaron",
     name: "Aaron",
-    avatar: "/assets/members/Aaron.jpg",
+    avatar: "/assets/members/Aaron.webp",
     category: "active",
     bio: "F3e1 T4e C0zy V1b3",
     link: "https://aar0n3906.github.io",
@@ -218,7 +218,7 @@ export const members: Member[] = [
   {
     id: "d3do",
     name: "d3do",
-    avatar: "/assets/members/d3do.jpeg",
+    avatar: "/assets/members/d3do.webp",
     category: "active",
     bio: "QAQ",
     github: "d3do-23",
@@ -227,7 +227,7 @@ export const members: Member[] = [
   {
     id: "和我签订契约成为魔法少女吧",
     name: "和我签订契约成为魔法少女吧|iami233",
-    avatar: "/assets/members/和我签订契约成为魔法少女吧.jpg",
+    avatar: "/assets/members/和我签订契约成为魔法少女吧.webp",
     category: "active",
     bio: "和我签订契约成为魔法少女吧",
     link: "https://5ime.cn/",
@@ -237,7 +237,7 @@ export const members: Member[] = [
   {
     id: "ForestWolf",
     name: "ForestWolf",
-    avatar: "/assets/members/ForestWolf.jpg",
+    avatar: "/assets/members/ForestWolf.webp",
     category: "active",
     bio: "Salvage the key evidence from the fragmented data. On the journey of CTF forensic investigation, I will go all out for the truth.",
     skills: ["misc", "Forensics"],
@@ -245,14 +245,14 @@ export const members: Member[] = [
   {
     id: "Y0ung",
     name: "Y0ung",
-    avatar: "/assets/members/Y0ung.jpg",
+    avatar: "/assets/members/Y0ung.webp",
     category: "active",
     skills: ["misc"],
   },
   {
     id: "W3nL0u",
     name: "W3nL0u | 问柳",
-    avatar: "/assets/members/W3nL0u.jpg",
+    avatar: "/assets/members/W3nL0u.webp",
     category: "active",
     bio: "求知欲，好奇心，勇毅前行",
     link: "https://xyy9233.github.io/",
@@ -262,7 +262,7 @@ export const members: Member[] = [
   {
     id: "一叶梦花",
     name: "一叶梦花",
-    avatar: "/assets/members/一叶梦花.jpg",
+    avatar: "/assets/members/一叶梦花.webp",
     category: "active",
     bio: "求求你不要kernel panic了，我什么都会做的！",
     skills: ["pwn"],
@@ -270,7 +270,7 @@ export const members: Member[] = [
   {
     id: "goudunz1",
     name: "goudunz1",
-    avatar: "/assets/members/goudunz1.jpg",
+    avatar: "/assets/members/goudunz1.webp",
     category: "active",
     bio: "Hugs are worth more than handshakes.",
     github: "goudunz1",
@@ -279,7 +279,7 @@ export const members: Member[] = [
   {
     id: "fault",
     name: "fault",
-    avatar: "/assets/members/fault.jpg",
+    avatar: "/assets/members/fault.webp",
     category: "active",
     bio: "我是nk大摆子",
     link: "https://fault.thisis.host/",
@@ -288,7 +288,7 @@ export const members: Member[] = [
   {
     id: "F12",
     name: "F12",
-    avatar: "/assets/members/F12.jpg",
+    avatar: "/assets/members/F12.webp",
     category: "active",
     bio: "N0wayBack守门员，世界上最纯爱的Web手",
     link: "https://www.cnblogs.com/F12-blog",
@@ -298,14 +298,14 @@ export const members: Member[] = [
   {
     id: "nian",
     name: "nian",
-    avatar: "/assets/members/nian.jpg",
+    avatar: "/assets/members/nian.webp",
     category: "active",
     skills: ["reverse"],
   },
   {
     id: "yiyi",
     name: "yiyi",
-    avatar: "/assets/members/yiyi.jpeg",
+    avatar: "/assets/members/yiyi.webp",
     category: "active",
     bio: "Web & Forensics | ZJPC Class of 2022",
     link: "https://xyaxxya.github.io/",
@@ -315,7 +315,7 @@ export const members: Member[] = [
   {
     id: "Tyaoxi",
     name: "Tyaoxi",
-    avatar: "/assets/members/Tyaoxi.jpg",
+    avatar: "/assets/members/Tyaoxi.webp",
     category: "active",
     bio: "半退役 娱乐为主",
     skills: ["reverse"],
@@ -323,7 +323,7 @@ export const members: Member[] = [
   {
     id: "ckyan",
     name: "ckyan | comentropy",
-    avatar: "/assets/members/ckyan.png",
+    avatar: "/assets/members/ckyan.webp",
     category: "active",
     bio: "pwner~",
     link: "https://blog.comentropy.cn/",
@@ -333,7 +333,7 @@ export const members: Member[] = [
   {
     id: "Huange",
     name: "Huange",
-    avatar: "/assets/members/Huange.jpg",
+    avatar: "/assets/members/Huange.webp",
     category: "active",
     bio: "a struggling pendulum...",
     github: "Huange-Y",
@@ -342,7 +342,7 @@ export const members: Member[] = [
   {
     id: "Sdegree",
     name: "Sdegree",
-    avatar: "/assets/members/Sdegree.png",
+    avatar: "/assets/members/Sdegree.webp",
     category: "active",
     link: "http://sdegree.cn",
     github: "https://github.com/superdegree",
@@ -351,7 +351,7 @@ export const members: Member[] = [
   {
     id: "Q1ngchuan",
     name: "Q1ngchuan",
-    avatar: "/assets/members/Q1ngchuan.jpg",
+    avatar: "/assets/members/Q1ngchuan.webp",
     category: "active",
     link: "https://blog.q1ngchuan.top",
     skills: ["web"],
@@ -359,14 +359,14 @@ export const members: Member[] = [
   {
     id: "pjx1314",
     name: "pjx1314",
-    avatar: "/assets/members/pjx1314.png",
+    avatar: "/assets/members/pjx1314.webp",
     category: "active",
     skills: ["misc"],
   },
   {
     id: "huan",
     name: "huan",
-    avatar: "/assets/members/huan.jpg",
+    avatar: "/assets/members/huan.webp",
     category: "active",
     bio: "ദ്ദി˶•̀֊•́)✧",
     link: "https://yhuanhuan01.github.io/",
@@ -375,7 +375,7 @@ export const members: Member[] = [
   {
     id: "fupanc",
     name: "fupanc",
-    avatar: "/assets/members/fupanc.jpg",
+    avatar: "/assets/members/fupanc.webp",
     category: "active",
     bio: "坚持，就会有结果",
     github: "https://github.com/fupanc-w1n",
@@ -384,7 +384,7 @@ export const members: Member[] = [
   {
     id: "lukie",
     name: "lukie",
-    avatar: "/assets/members/lukie.jpg",
+    avatar: "/assets/members/lukie.webp",
     category: "active",
     bio: "考研ing，梦想是成为渗透大师？",
     skills: ["blockchain", "web"],
@@ -401,7 +401,7 @@ export const members: Member[] = [
   {
     id: "xuanSAMA",
     name: "xuanSAMA",
-    avatar: "/assets/members/xuanSAMA.png",
+    avatar: "/assets/members/xuanSAMA.webp",
     category: "active",
     link: "https://blog.ox0.moe",
     github: "lgxuan",
@@ -410,7 +410,7 @@ export const members: Member[] = [
   {
     id: "BR",
     name: "BR | yzbrh",
-    avatar: "/assets/members/BR.jpg",
+    avatar: "/assets/members/BR.webp",
     category: "active",
     bio: "在时光的长河中，寻找属于自己的星辰大海",
     link: "https://blog.yzbrh.top/",
@@ -420,7 +420,7 @@ export const members: Member[] = [
   {
     id: "liangxi",
     name: "liangxi",
-    avatar: "/assets/members/liangxi.jpg",
+    avatar: "/assets/members/liangxi.webp",
     category: "active",
     bio: "Powerful in web",
     skills: ["web"],
@@ -428,7 +428,7 @@ export const members: Member[] = [
   {
     id: "Annms_",
     name: "Annms_",
-    avatar: "/assets/members/Annms_.jpg",
+    avatar: "/assets/members/Annms_.webp",
     category: "active",
     link: "https://annm5oi.site",
     skills: ["reverse"],
@@ -436,7 +436,7 @@ export const members: Member[] = [
   {
     id: "N1ng",
     name: "N1ng",
-    avatar: "/assets/members/N1ng.jpg",
+    avatar: "/assets/members/N1ng.webp",
     category: "active",
     bio: "世味煮成茶，浮云吹作雪",
     github: "https://github.com/wihaker",
@@ -445,7 +445,7 @@ export const members: Member[] = [
   {
     id: "D0wnBe@t",
     name: "D0wnBe@t",
-    avatar: "/assets/members/D0wnBe@t.jpg",
+    avatar: "/assets/members/D0wnBe@t.webp",
     category: "active",
     bio: "01小菜🐔",
     skills: ["pwn", "reverse"],
@@ -453,7 +453,7 @@ export const members: Member[] = [
   {
     id: "Ak0er",
     name: "Ak0er",
-    avatar: "/assets/members/Ak0er.jpg",
+    avatar: "/assets/members/Ak0er.webp",
     category: "active",
     link: "ak0er.github.io",
     skills: ["pwn", "web"],
