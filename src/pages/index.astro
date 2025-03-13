@@ -7,9 +7,9 @@ import logoOrigin from '../assets/logo-origin.webp';
 <MainLayout title="Home" pageType="index">
   <div class="cyberpunk-grid"></div>
   
-  <section class="py-8 md:py-16 min-h-[80vh] flex items-center">
-    <div class="w-full max-w-4xl mx-auto px-4">
-      <div class="terminal-container">
+  <section class="flex-grow flex items-center py-0 min-h-screen">
+    <div class="w-full max-w-4xl mx-auto px-4 py-0 h-full flex flex-col">
+      <div class="terminal-container flex-grow flex flex-col">
         <div class="terminal-background">
           <img src={logoOrigin.src} alt="N0wayBack Logo" />
         </div>
@@ -30,7 +30,7 @@ import logoOrigin from '../assets/logo-origin.webp';
 └─────────────────────────────────────────────────────────────────────────┘
         </pre>
         
-        <div class="terminal-body font-mono text-sm p-3 md:p-6">
+        <div class="terminal-body font-mono text-sm p-3 md:p-6 flex-grow flex flex-col" style="height: 100%; overflow-y: auto;">
           <div class="mb-4 md:mb-6">
             <div class="text-secondary-light dark:text-secondary-dark terminal-command">$ whoami</div>
             <div class="mt-2 text-light-light dark:text-light-dark">
@@ -85,7 +85,7 @@ import logoOrigin from '../assets/logo-origin.webp';
             </div>
           </div>
           
-          <div class="terminal-prompt">
+          <div class="terminal-prompt mt-auto">
             <span class="text-green-500 dark:text-green-400">root@n0wayback</span>:<span class="text-blue-500 dark:text-blue-400">~</span>$ <span class="typing-cursor">_</span>
           </div>
         </div>
@@ -119,14 +119,16 @@ import logoOrigin from '../assets/logo-origin.webp';
     overflow: hidden;
     position: relative;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 100%;
+    min-height: 90vh;
+    margin: 1vh 0;
+    display: flex;
+    flex-direction: column;
   }
   
   :root.dark .terminal-container {
-    background-color: rgba(16, 16, 32, 0.6);
-    border: 1px solid rgba(66, 211, 146, 0.3);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    background-color: rgba(10, 25, 47, 0.8);
+    border-color: rgba(100, 255, 218, 0.5);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   }
   
   /* 终端背景图片 */
@@ -183,6 +185,8 @@ import logoOrigin from '../assets/logo-origin.webp';
     min-height: 200px;
     position: relative;
     z-index: 1;
+    height: 100%;
+    overflow-y: auto;
   }
   
   :root.dark .terminal-body {
