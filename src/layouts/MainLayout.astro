@@ -69,7 +69,7 @@ const speed = loadingSpeed[pageType];
       };
     </script>
   </head>
-  <body class="bg-primary-light dark:bg-primary-dark text-light-light dark:text-light-dark min-h-screen terminal-boot">
+  <body class="bg-primary-light dark:bg-primary-dark text-light-light dark:text-light-dark min-h-screen terminal-boot flex flex-col">
     <!-- 加载动画 -->
     <div id="loading-screen" class="loading-screen">
       <div class="loading-container">
@@ -82,7 +82,7 @@ const speed = loadingSpeed[pageType];
     </div>
     
     <Navbar />
-    <main class="fade-in">
+    <main class="fade-in flex-grow">
       <slot />
     </main>
     <Footer />
