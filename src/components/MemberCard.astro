@@ -179,19 +179,19 @@ if (skills && skills.length > 0) {
 
 <div class={`border ${categoryClass} hover:border-secondary-light dark:hover:border-secondary-dark transition-all duration-300 p-4 flex flex-col h-full card-container mx-auto max-w-md`}>
   <div class="flex items-center gap-4 mb-4">
-    <div class="w-16 h-16 rounded-sm overflow-hidden border border-secondary-light/40 dark:border-secondary-dark/40">
+    <div class="w-16 h-16 flex-shrink-0 rounded-sm overflow-hidden border border-secondary-light/40 dark:border-secondary-dark/40">
       <img src={avatar} alt={`${formattedName}'s avatar`} class="w-full h-full object-cover transition-all duration-300" />
     </div>
     
-    <div>
-      <h3 class="font-mono text-light-light dark:text-light-dark font-bold">{formattedName}</h3>
+    <div class="min-w-0"> 
+      <h3 class="font-mono text-light-light dark:text-light-dark font-bold break-words">{formattedName}</h3>
       <div class="flex flex-col gap-1 mt-1">
         {githubUsername && (
           <a href={githubUrl} target="_blank" rel="noopener noreferrer" class="text-xs text-secondary-light dark:text-secondary-dark hover:underline font-mono">
             <span class="mr-1">~</span>github: @{githubUsername}
           </a>
         )}
-        
+  
         {link && !link.includes('github.com/') && (
           <a href={link} target="_blank" rel="noopener noreferrer" class="text-xs text-secondary-light dark:text-secondary-dark hover:underline font-mono">
             <span class="mr-1">~</span>website
