@@ -7,7 +7,6 @@ interface Props {
   title: string;
   description?: string;
   pageType?: 'index' | 'members' | 'honors';
-  image?: string;
   keywords?: string;
 }
 
@@ -15,7 +14,6 @@ const {
   title, 
   description = "Official website of N0wayBack Team",
   pageType = 'index',
-  image = logo.src,
   keywords = "N0wayBack, CTF, Cybersecurity, Hacking, Security Research"
 } = Astro.props as Props;
 
@@ -100,8 +98,8 @@ const siteUrl = "https://n0wayback.net";
     </script>
   </head>
   <body class="bg-primary-light dark:bg-primary-dark text-light-light dark:text-light-dark min-h-screen terminal-boot flex flex-col">
-    <!-- Loading animation - hidden initially for SEO, shown by JavaScript -->
-    <div id="loading-screen" class="loading-screen" style="display: none;">
+    <!-- Loading animation - initially hidden for SEO -->
+    <div id="loading-screen" class="loading-screen seo-hidden">
       <div class="loading-container">
         <div class="loading-logo">N0wayBack</div>
         <div class="loading-bar-container">
@@ -161,7 +159,7 @@ const siteUrl = "https://n0wayback.net";
         // Show loading screen for human visitors only
         const loadingScreen = document.getElementById('loading-screen');
         if (loadingScreen) {
-          loadingScreen.style.display = 'block';
+          loadingScreen.classList.remove('seo-hidden');
         }
 
         // Enhanced terminal boot effect
@@ -353,5 +351,9 @@ const siteUrl = "https://n0wayback.net";
   .loaded {
     opacity: 0;
     pointer-events: none;
+  }
+  
+  .seo-hidden {
+    display: none;
   }
 </style>
