@@ -2,9 +2,19 @@
 import MainLayout from '../layouts/MainLayout.astro';
 import logo from '../assets/logo.svg';
 import logoOrigin from '../assets/logo-origin.webp';
+
+// Custom SEO metadata for homepage
+const title = "Home";
+const description = "N0wayBack - An elite team focused on CTF competitions and cybersecurity research. We specialize in security challenges, providing top-tier research and solutions.";
+const keywords = "N0wayBack, CTF Team, Cybersecurity, Hacking, Security Research, Information Security, Penetration Testing";
 ---
 
-<MainLayout title="Home" pageType="index">
+<MainLayout 
+  title={title} 
+  description={description}
+  keywords={keywords}
+  pageType="index"
+>
   <div class="cyberpunk-grid"></div>
   
   <section class="flex-grow flex items-center py-0 min-h-screen">
