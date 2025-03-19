@@ -7,15 +7,19 @@ interface Props {
   title: string;
   description?: string;
   pageType?: 'index' | 'members' | 'honors';
+  image?: string;
+  keywords?: string;
 }
 
 const { 
   title, 
   description = "Official website of N0wayBack Team",
-  pageType = 'index'
+  pageType = 'index',
+  image = logo.src,
+  keywords = "N0wayBack, CTF, Cybersecurity, Hacking, Security Research"
 } = Astro.props as Props;
 
-// 根据页面类型设置不同的加载消息和速度
+// Set loading messages and speed based on page type
 const loadingMessages: Record<string, string[]> = {
   index: ['SYSTEM INITIALIZATION...', 'LOADING CORE MODULES...', 'ESTABLISHING SECURE CONNECTION...', 'SYSTEM READY'],
   members: ['LOADING TEAM DATA...', 'DECRYPTING PROFILES...', 'TEAM READY'],
@@ -23,13 +27,16 @@ const loadingMessages: Record<string, string[]> = {
 };
 
 const loadingSpeed: Record<string, number> = {
-  index: 200, // 较慢
-  members: 100, // 较快
-  honors: 80 // 最快
+  index: 200, // slower
+  members: 100, // faster
+  honors: 80 // fastest
 };
 
 const messages = loadingMessages[pageType];
 const speed = loadingSpeed[pageType];
+
+// Website URL
+const siteUrl = "https://n0wayback.net";
 ---
 
 <!DOCTYPE html>
@@ -38,17 +45,21 @@ const speed = loadingSpeed[pageType];
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />
+    <meta name="author" content="N0wayBack Team" />
+    <meta name="robots" content="index, follow" />
+    
     <title>{title} | N0wayBack</title>
     <link rel="icon" type="image/svg+xml" href={logo.src} />
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
     <script is:inline>
-      // 立即执行脚本，避免闪烁
+      // Immediately invoked script to avoid flicker
       const getThemePreference = () => {
         if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
           return localStorage.getItem('theme');
         }
-        return 'dark'; // 默认使用深色模式，不检查系统偏好
+        return 'dark'; // Default to dark mode, do not check system preference
       };
       
       const theme = getThemePreference();
@@ -59,19 +70,38 @@ const speed = loadingSpeed[pageType];
       }
     </script>
     
-    <!-- 将页面类型和加载消息传递给JavaScript -->
+    <!-- Pass page type and loading messages to JavaScript -->
     <script define:vars={{ pageType, messages, speed }}>
-      // 将变量存储在window对象上，以便在DOMContentLoaded事件中使用
+      // Store variables on the window object for use in the DOMContentLoaded event
       window.pageConfig = {
         pageType: pageType,
         messages: messages,
         speed: speed
       };
     </script>
+    
+    <!-- Structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "N0wayBack",
+        "url": "https://n0wayback.net",
+        "logo": "https://n0wayback.net/logo.svg",
+        "description": "Official website of N0wayBack Team",
+        "sameAs": [
+          "https://github.com/N0wayBack"
+        ],
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://n0wayback.net"
+        }
+      }
+    </script>
   </head>
   <body class="bg-primary-light dark:bg-primary-dark text-light-light dark:text-light-dark min-h-screen terminal-boot flex flex-col">
-    <!-- 加载动画 -->
-    <div id="loading-screen" class="loading-screen">
+    <!-- Loading animation - hidden initially for SEO, shown by JavaScript -->
+    <div id="loading-screen" class="loading-screen" style="display: none;">
       <div class="loading-container">
         <div class="loading-logo">N0wayBack</div>
         <div class="loading-bar-container">
@@ -80,6 +110,15 @@ const speed = loadingSpeed[pageType];
         <div class="loading-text">{messages[0]}</div>
       </div>
     </div>
+    
+    <!-- SEO-friendly noscript fallback -->
+    <noscript>
+      <style>
+        .loading-screen { display: none !important; }
+        .terminal-boot::before { animation: none !important; }
+        .fade-in { opacity: 1 !important; transform: none !important; }
+      </style>
+    </noscript>
     
     <Navbar />
     <main class="fade-in flex-grow">
@@ -99,56 +138,74 @@ const speed = loadingSpeed[pageType];
       }
       
       document.addEventListener('DOMContentLoaded', () => {
-        // 从 localStorage 中获取用户的主题选择
+        // Get user's theme choice from localStorage
         const currentTheme = localStorage.getItem('theme');
         
-        // 如果用户设置了主题，使用它
+        // Use the user's theme if set
         if (currentTheme === 'dark') {
           document.documentElement.classList.add('dark');
         } else if (currentTheme === 'light') {
           document.documentElement.classList.remove('dark');
         } else {
-          // 如果没有设置，默认使用深色模式
+          // Default to dark mode if not set
           document.documentElement.classList.add('dark');
           localStorage.setItem('theme', 'dark');
         }
 
-        // 获取页面配置
+        // Get page configuration
         const { messages, speed } = window.pageConfig || {
           messages: ['LOADING...', 'READY'],
           speed: 200
         };
 
-        // 增强的终端启动效果
+        // Show loading screen for human visitors only
         const loadingScreen = document.getElementById('loading-screen');
+        if (loadingScreen) {
+          loadingScreen.style.display = 'block';
+        }
+
+        // Enhanced terminal boot effect
         const loadingBar = document.querySelector('.loading-bar') as HTMLElement;
         const loadingText = document.querySelector('.loading-text') as HTMLElement;
         
-        // 确保元素存在
+        // Ensure elements exist
         if (loadingScreen && loadingBar && loadingText) {
-          // 模拟加载进度
+          // Simulate loading progress
           let progress = 0;
           let messageIndex = 0;
+          
+          // Set a maximum time for the loading animation (3 seconds)
+          const maxLoadTime = 3000;
+          const startTime = Date.now();
+          
           const interval = setInterval(() => {
-            progress += Math.random() * 15;
+            const elapsedTime = Date.now() - startTime;
+            
+            // Ensure animation completes within maxLoadTime
+            if (elapsedTime >= maxLoadTime) {
+              progress = 100;
+            } else {
+              progress += Math.random() * 15;
+            }
+            
             if (progress >= 100) {
               progress = 100;
               clearInterval(interval);
               
-              // 显示完成消息
+              // Display completion message
               loadingText.textContent = messages[messages.length - 1];
               
-              // 延迟后隐藏加载屏幕
+              // Hide loading screen after a delay
               setTimeout(() => {
                 loadingScreen.classList.add('loaded');
                 document.body.classList.add('terminal-booted');
               }, 500);
             }
             
-            // 更新加载条
+            // Update loading bar
             loadingBar.style.width = `${progress}%`;
             
-            // 更新加载消息
+            // Update loading message
             if (progress > 30 && progress < 60 && messageIndex === 0) {
               messageIndex = 1;
               loadingText.textContent = messages[messageIndex];
@@ -157,6 +214,14 @@ const speed = loadingSpeed[pageType];
               loadingText.textContent = messages[messageIndex];
             }
           }, speed);
+          
+          // Fallback to ensure loading completes even if something goes wrong
+          setTimeout(() => {
+            if (!document.body.classList.contains('terminal-booted')) {
+              loadingScreen.classList.add('loaded');
+              document.body.classList.add('terminal-booted');
+            }
+          }, maxLoadTime + 1000);
         }
       });
     </script>
@@ -165,15 +230,15 @@ const speed = loadingSpeed[pageType];
 
 <style is:global>
   :root {
-    --selection-bg: rgba(0, 158, 127, 0.3); /* 浅色模式使用更深的颜色 */
+    --selection-bg: rgba(0, 158, 127, 0.3); /* Light mode uses a deeper color */
     --scrollbar-track: #e5e7eb;
-    --scrollbar-thumb: #009e7f; /* 更新为浅色模式的深绿色 */
+    --scrollbar-thumb: #009e7f; /* Updated to a deeper green for light mode */
   }
   
   .dark {
-    --selection-bg: rgba(100, 255, 218, 0.2); /* 暗色模式继续使用原来的颜色 */
+    --selection-bg: rgba(100, 255, 218, 0.2); /* Dark mode continues to use the original color */
     --scrollbar-track: #0a192f;
-    --scrollbar-thumb: #64ffda; /* 暗色模式继续使用原来的颜色 */
+    --scrollbar-thumb: #64ffda; /* Dark mode continues to use the original color */
   }
   
   ::selection {
@@ -193,7 +258,7 @@ const speed = loadingSpeed[pageType];
     border-radius: 6px;
   }
   
-  /* 终端启动效果 */
+  /* Terminal boot effect */
   .terminal-boot::before {
     content: "";
     position: fixed;
@@ -223,7 +288,7 @@ const speed = loadingSpeed[pageType];
     to { opacity: 1; transform: translateY(0); }
   }
   
-  /* 加载动画 */
+  /* Loading animation */
   .loading-screen {
     position: fixed;
     top: 0;

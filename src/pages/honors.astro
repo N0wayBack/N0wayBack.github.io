@@ -2,6 +2,11 @@
 import MainLayout from '../layouts/MainLayout.astro';
 import { honors } from '../data/honors';
 
+// Custom SEO metadata for honors page
+const title = "Honors & Achievements";
+const description = "Explore the honors and achievements of N0wayBack team. View our awards and milestones in various CTF competitions, security challenges, and cybersecurity field.";
+const keywords = "N0wayBack honors, CTF competition results, cybersecurity awards, hackathon wins, security research achievements, information security contests";
+
 // Sort by date in descending order
 const sortedHonors = [...honors].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
@@ -19,7 +24,12 @@ const honorsByYear = sortedHonors.reduce((acc, honor) => {
 const years = Object.keys(honorsByYear).map(Number).sort((a, b) => b - a);
 ---
 
-<MainLayout title="Honors & Achievements" pageType="honors">
+<MainLayout 
+  title={title} 
+  description={description} 
+  keywords={keywords}
+  pageType="honors"
+>
   <div class="cyberpunk-grid"></div>
   
   <section class="py-8 md:py-16">

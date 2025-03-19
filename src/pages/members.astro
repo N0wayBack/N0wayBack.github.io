@@ -3,6 +3,11 @@ import MainLayout from '../layouts/MainLayout.astro';
 import { members } from '../data/members';
 import MemberCard from '../components/MemberCard.astro';
 
+// Custom SEO metadata for members page
+const title = "Team Members";
+const description = "Meet the core members of N0wayBack team. Our expert team has extensive experience in cybersecurity, penetration testing, CTF competitions, and vulnerability research.";
+const keywords = "N0wayBack team members, cybersecurity experts, CTF players, security researchers, hacking specialists, information security team";
+
 // 根据category属性将成员分为三类：管理组、活跃成员和先驱成员
 const teamLeaders = members.filter(member => member.category === 'admin');
 const activeMembers = members.filter(member => member.category === 'active' || !member.category); // 默认为active
@@ -21,7 +26,12 @@ if (pioneerMembers.length === 0) {
 }
 ---
 
-<MainLayout title="Team Members" pageType="members">
+<MainLayout 
+  title={title} 
+  description={description} 
+  keywords={keywords}
+  pageType="members"
+>
   <div class="cyberpunk-grid"></div>
   
   <section class="py-8 md:py-16">
