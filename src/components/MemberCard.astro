@@ -224,7 +224,7 @@ if (skills && skills.length > 0) {
               class="inline-block px-2 py-0.5 text-xs font-mono border text-light-light/90 dark:text-light-dark/90 skill-tag" 
               style={`--bg-light: ${colors.bgLight}; --bg-dark: ${colors.bgDark}; --border-light: ${colors.borderLight}; --border-dark: ${colors.borderDark};`}
             >
-              {skill}
+              {skill.charAt(0).toUpperCase() + skill.slice(1)}
             </span>
           );
         })}

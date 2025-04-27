@@ -455,7 +455,7 @@ export const members: Member[] = [
     name: "Ak0er",
     avatar: "/assets/members/Ak0er.webp",
     category: "active",
-    link: "ak0er.github.io",
+    link: "https://ak0er.github.io",
     skills: ["pwn", "web"],
   },
 ];
