@@ -55,6 +55,7 @@ export const members: Member[] = [
     github: "tangcuxiaojikuai",
     skills: ["crypto"],
   },
+  // active
   {
     id: "Lazzaro",
     name: "Lazzaro",
@@ -458,4 +459,90 @@ export const members: Member[] = [
     link: "https://ak0er.github.io",
     skills: ["pwn", "web"],
   },
+  // pioneers
+
+  {
+    id: "Tacooo0o",
+    name: "Tacooo0o",
+    avatar: "/assets/members/taco.webp",
+    category: "pioneers",
+    skills: ["Founder", "Misc"],
+  },
+  {
+    id: "tuboshu",
+    name: "tuboshu",
+    avatar: "/assets/members/tuboshu.webp",
+    category: "pioneers",
+    skills: ["Pwn"],
+  },
+  {
+    id: "Yu_",
+    name: "Yu_",
+    avatar: "/assets/members/yu.webp",
+    category: "pioneers",
+    skills: ["Web"],
+  },
+  {
+    id: "Byxs20",
+    name: "Byxs20",
+    avatar: "/assets/members/Byxs20.webp",
+    category: "pioneers",
+    skills: ["Misc"],
+  },
+  {
+    id: "szukodf",
+    name: "szukodf",
+    avatar: "/assets/members/szukodf.webp",
+    category: "pioneers",
+    skills: ["Reverse"],
+  },
+  {
+    id: "g0at",
+    name: "g0at",
+    avatar: "/assets/members/g0at.webp",
+    category: "pioneers",
+    skills: ["Misc"],
+  },
+  {
+    id: "Ch5r1y",
+    name: "Ch5r1y",
+    avatar: "/assets/members/Ch5r1y.webp",
+    category: "pioneers",
+    skills: ["Misc"],
+  },
+  {
+    id: "stone-san",
+    name: "stone-san",
+    avatar: "/assets/members/stone-san.webp",
+    category: "pioneers",
+    skills: ["Pwn"],
+  },
+  {
+    id: "YNsec",
+    name: "YNsec",
+    avatar: "/assets/members/YNsec.webp",
+    category: "pioneers",
+    skills: ["Web"],
+  },
+  {
+    id: "247533",
+    name: "247533",
+    avatar: "/assets/members/247533.webp",
+    category: "pioneers",
+    skills: ["Web3", "Red-Team"],
+  },
+  {
+    id: "nian",
+    name: "nian",
+    avatar: "/assets/members/nian.webp",
+    category: "pioneers",
+    skills: ["Reverse"],
+  },
+  {
+    id: "charlotte流光|幻蓝",
+    name: "charlotte流光|幻蓝",
+    avatar: "/assets/members/charlotte.webp",
+    category: "pioneers",
+    skills: ["Reverse"],
+  }
 ];
