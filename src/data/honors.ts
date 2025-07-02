@@ -7,6 +7,14 @@ export interface Honor {
 }
 
 export const honors: Honor[] = [
+  // ACTF 2025
+    {    
+    id: "actf_2025",
+    name: "ACTF 2025",
+    date: "2025-04-26",
+    rank: "1st Place",
+    isMilestone: true
+  },
   // TPCTF 比赛数据
   {
     id: "tpctf_2025",

@@ -26,7 +26,7 @@ jobs:
         run: npm run build
 
       - name: Create CNAME file
-        run: echo 'n0wayback.net' > ./dist/CNAME
+        run: echo 'www.n0wayback.net' > ./dist/CNAME
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
