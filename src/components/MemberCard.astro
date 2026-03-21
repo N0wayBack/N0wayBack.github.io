@@ -245,11 +245,9 @@ if (skills && skills.length > 0) {
   }
   
   /* 暗色模式下的技能标签 */
-  @media (prefers-color-scheme: dark) {
-    .skill-tag {
-      background-color: var(--bg-dark);
-      border-color: var(--border-dark);
-    }
+  :root.dark .skill-tag {
+    background-color: var(--bg-dark);
+    border-color: var(--border-dark);
   }
   
   /* 卡片悬停效果 - 添加$指向效果 */
@@ -277,9 +275,7 @@ if (skills && skills.length > 0) {
     transform: translateY(-50%) translateX(0.5rem);
   }
   
-  @media (prefers-color-scheme: dark) {
-    .card-container::before {
-      color: var(--secondary-dark, #42d392);
-    }
+  :root.dark .card-container::before {
+    color: var(--secondary-dark, #42d392);
   }
 </style>

@@ -8,7 +8,7 @@ export interface Honor {
 
 export const honors: Honor[] = [
   // ACTF 2025
-    {    
+  {
     id: "actf_2025",
     name: "ACTF 2025",
     date: "2025-04-26",
@@ -94,6 +94,6 @@ export const honors: Honor[] = [
     id: "longjian_2023",
     name: "陇剑杯 S2 Qual 社会组",
     date: "2023-08-26",
-    rank: "1th Place",
+    rank: "1st Place",
   },
 ];

@@ -297,13 +297,6 @@ export const members: Member[] = [
     skills: ["web"],
   },
   {
-    id: "nian",
-    name: "nian",
-    avatar: "/assets/members/nian.webp",
-    category: "active",
-    skills: ["reverse"],
-  },
-  {
     id: "yiyi",
     name: "yiyi",
     avatar: "/assets/members/yiyi.webp",
@@ -396,7 +389,7 @@ export const members: Member[] = [
     avatar: "/assets/members/f4k3ctr0n1c.webp",
     category: "active",
     bio: "中有足乐",
-    link: "www.notfinishedyet.com",
+    link: "https://www.notfinishedyet.com",
     skills: ["misc", "Forensics", "pentest"],
   },
   {
