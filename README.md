@@ -13,10 +13,10 @@
   </p>
   
   <p>
-    <img src="https://img.shields.io/badge/Astro-3.x-orange?style=flat-square&logo=astro" alt="Astro 3.x" />
+    <img src="https://img.shields.io/badge/Astro-5.x-orange?style=flat-square&logo=astro" alt="Astro 5.x" />
     <img src="https://img.shields.io/badge/Tailwind-3.x-blue?style=flat-square&logo=tailwindcss" alt="Tailwind CSS" />
     <img src="https://img.shields.io/badge/TypeScript-5.x-blue?style=flat-square&logo=typescript" alt="TypeScript" />
-    <img src="https://img.shields.io/badge/license-GPL3-green?style=flat-square" alt="GPL3 License" />
+    <a href="LICENSE"><img src="https://img.shields.io/badge/license-GPL--3.0-green?style=flat-square" alt="GPL-3.0 License" /></a>
     <img src="https://img.shields.io/github/actions/workflow/status/N0wayBack/N0wayBack.github.io/astro.yml?branch=main&style=flat-square&logo=github" alt="GitHub Workflow Status" />
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square" alt="PRs Welcome" />
     <img src="https://img.shields.io/badge/cyberpunk-enabled-ff00ff?style=flat-square" alt="Cyberpunk Enabled" />
@@ -24,33 +24,33 @@
 </div>
 
 <details>
-<summary>📑 Table of Contents</summary>
+<summary>Table of Contents</summary>
 
-- [🌐 About](#-about)
-- [🌐 Live Website](#-live-website)
-- [🎨 Design Features](#-design-features)
-- [👨‍💻 Credits](#-credits)
-- [🚀 Project Structure](#-project-structure)
-- [📝 Features](#-features)
-- [🧞 Commands](#-commands)
-- [🔧 Tech Stack](#-tech-stack)
-- [📱 Responsive Design & Layout](#-responsive-design--layout)
-- [🔄 Loading Animation](#-loading-animation)
-- [🚀 Deployment](#-deployment)
-- [👥 Contributing](#-contributing)
-- [📜 License](#-license)
+- [About](#about)
+- [Live Website](#live-website)
+- [Design Features](#design-features)
+- [Credits](#credits)
+- [Project Structure](#project-structure)
+- [Features](#features)
+- [Commands](#commands)
+- [Tech Stack](#tech-stack)
+- [Responsive Design & Layout](#responsive-design--layout)
+- [Loading Animation](#loading-animation)
+- [Deployment](#deployment)
+- [Contributing](#contributing)
+- [License](#license)
 
 </details>
 
-## 🌐 About
+## About
 
 This is the official website for the N0wayBack team, built with Astro framework, showcasing team introduction, member information, and a hall of fame. The website features a cyberpunk terminal-style design with interactive elements and responsive layouts.
 
-## 🌐 Live Website
+## Live Website
 
 Visit our website at [https://n0wayback.net](https://n0wayback.net)
 
-## 🎨 Design Features
+## Design Features
 
 - **Terminal-Style Interface**: The entire website is designed to mimic a terminal/command-line interface
 - **Cyberpunk Aesthetic**: Features neon colors, grid backgrounds, and glitch effects
@@ -60,11 +60,11 @@ Visit our website at [https://n0wayback.net](https://n0wayback.net)
 - **Optimized Layout**: Flex-based layout system ensures proper content distribution and footer positioning
 - **Dynamic Loading Animation**: Custom loading screen with progress bar enhances user experience
 
-## 👨‍💻 Credits
+## Credits
 
 Designed and developed by [shenghuo2](https://github.com/shenghuo2)
 
-## 🚀 Project Structure
+## Project Structure
 
 ```text
 /
@@ -80,13 +80,11 @@ Designed and developed by [shenghuo2](https://github.com/shenghuo2)
 │   ├── components/   # Reusable components
 │   │   ├── Footer.astro
 │   │   ├── MemberCard.astro
-│   │   ├── Navbar.astro
-│   │   └── Welcome.astro
+│   │   └── Navbar.astro
 │   ├── data/         # Data files
 │   │   ├── honors.ts  # Honors and achievements data
 │   │   └── members.ts # Team members data
 │   ├── layouts/      # Page layouts
-│   │   ├── Layout.astro
 │   │   └── MainLayout.astro
 │   └── pages/        # Pages
 │       ├── honors.astro
@@ -102,7 +100,7 @@ Designed and developed by [shenghuo2](https://github.com/shenghuo2)
 └── package.json
 ```
 
-## 📝 Features
+## Features
 
 - **Home Page**: Team introduction with terminal-style ASCII art and manifesto
 - **Members Page**: Displays team leaders, active members, and pioneers with their skills and contributions
@@ -111,7 +109,7 @@ Designed and developed by [shenghuo2](https://github.com/shenghuo2)
 - **Optimized Loading Experience**: Progressive loading animations with customized messages for different page types
 - **Full-Screen Terminal**: Vertically expanded terminal interface that fills the entire viewport for immersive experience
 
-## 🧞 Commands
+## Commands
 
 All commands are run from the root of the project:
 
@@ -122,13 +120,13 @@ All commands are run from the root of the project:
 | `npm run build`           | Builds production site to `./dist/` directory    |
 | `npm run preview`         | Previews build locally before deployment         |
 
-## 🔧 Tech Stack
+## Tech Stack
 
 - [Astro](https://astro.build) - Fast, modern static site generator
 - [Tailwind CSS](https://tailwindcss.com) - Utility-first CSS framework
 - [TypeScript](https://www.typescriptlang.org/) - Typed JavaScript for better code quality
 
-## 📱 Responsive Design & Layout
+## Responsive Design & Layout
 
 The website uses a flex-based layout system to ensure proper content distribution across different screen sizes:
 
@@ -138,7 +136,7 @@ The website uses a flex-based layout system to ensure proper content distributio
 - **Responsive Typography**: Font sizes adjust based on screen width
 - **Mobile-Optimized Navigation**: Simplified navigation for smaller screens
 
-## 🔄 Loading Animation
+## Loading Animation
 
 The website features a sophisticated loading animation system:
 
@@ -148,14 +146,14 @@ The website features a sophisticated loading animation system:
 - **Terminal Boot Effect**: Simulates a terminal boot sequence for an authentic cyberpunk experience
 - **Optimized Performance**: Loading animations are designed to be lightweight and non-blocking
 
-## 🚀 Deployment
+## Deployment
 
 The website is automatically deployed to GitHub Pages using GitHub Actions. The deployment workflow is defined in `.github/workflows/astro.yml`. When changes are pushed to the main branch, the site is automatically built and deployed.
 
-## 👥 Contributing
+## Contributing
 
 If you want to contribute to the N0wayBack team website, feel free to submit a Pull Request or contact our team members.
 
-## 📜 License
+## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the GPL-3.0 License - see the [LICENSE](LICENSE) file for details.
